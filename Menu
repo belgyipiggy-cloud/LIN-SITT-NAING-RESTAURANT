@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIN SITT NAING RESTAURANT - Food Menu</title>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #f57c00;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            padding-bottom: 70px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .info {
+            margin-top: 10px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .category-title {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .menu-item {
+            background-color: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .menu-item h3 {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+            color: #111;
+        }
+
+        .menu-item p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .call-btn-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .call-btn {
+            background-color: #25d366;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .ad-banner {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            text-align: center;
+            border: 1px dashed #999;
+            border-radius: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LIN SITT NAING RESTAURANT</h1>
+        <div class="info">
+            <p>📍 အမှတ် ၄၁၅ ဗိုလ်ချုပ်လမ်းမကြီး၊ နတ်စင်ကုန်စံပြကျေးရွာတောင်ပိုင်း၊ ကော့မှူးမြို့နယ်၊ ရန်ကုန်။</p>
+            <p>⏰ ဆိုင်ဖွင့်ချိန်: မနက် ၁၀:၀၀ နာရီ - ည ၈:၀၀ နာရီ</p>
+            <p>📞 ဖုန်း: 09772517045</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Special Dishes -->
+        <div class="category-title">အထူး အသားဟင်းလျာများ (Special Dishes)</div>
+        <div class="menu-grid">
+            <div class="menu-item"><h3>၁။ မာလာရှို့ကော (ကြက်/ဝက်/ပုစွန်/ပင်လယ်စာ)</h3><p>Malar Xiang Guo</p></div>
+            <div class="menu-item"><h3>၂။ ဝက်ဒုတ်သားကောင်</h3><p>Thai Style Grill Pork-net Salad</p></div>
+            <div class="menu-item"><h3>၃။ ကြေးအိုး / ဆီချက်</h3><p>Chinese Traditional Vermicelli Soup/Salad/Noodle</p></div>
+            <div class="menu-item"><h3>၄။ ဝက်လက်တုတ်ဟင်းလျာ</h3><p>Chinese Style Pork-leg Stewing Dishes</p></div>
+            <div class="menu-item"><h3>၅။ ကိုင်းတိုင်ဟင်းလျာ</h3><p>Myanmar Traditional Fisher-man Curry</p></div>
+            <div class="menu-item"><h3>၆။ ရှမ်းခေါက်ဆွဲ</h3><p>Myanmar Traditional Shan Style Rice Noodle Salad</p></div>
+            <div class="menu-item"><h3>၇။ ဝက်ရှံနံရိုးပေါင်းဆီချက်</h3><p>Steamed Pork-rib with Chinese Style Noodle Salad</p></div>
+            <div class="menu-item"><h3>၈။ ကြက်ပေါင်းဆီချက်</h3><p>Chinese Style Special Steamed Chicken Noodle Salad</p></div>
+            <div class="menu-item"><h3>၉။ ကြက်ဆီချက်</h3><p>Chinese Style Chicken Vermicelli Salad</p></div>
+            <div class="menu-item"><h3>၁၀။ ကြက်ကင်</h3><p>Grilled Chicken</p></div>
+            <div class="menu-item"><h3>၁၁။ ဝက်ကင်</h3><p>Grilled Pork</p></div>
+            <div class="menu-item"><h3>၁၂။ ပုစွန်ကင်</h3><p>Grilled Prawn</p></div>
+            <div class="menu-item"><h3>၁၃။ ကိုင်းတိုင်ဟင်းလျာ</h3><p>Traditional Fisher-man Curry</p></div>
+            <div class="menu-item"><h3>၁၄။ အက္ကရာမီးတောက်</h3><p>Star-fry Assorted Seafood with Flame</p></div>
+            <div class="menu-item"><h3>၁၅။ ဝက်အူစုံမြေအိုး</h3><p>Pork Tripe Clay-pot</p></div>
+        </div>
+
+        <!-- Starters & Snacks -->
+        <div class="category-title">အမြည်း နှင့် အကြော်အလှော်များ (Starters & Snacks)</div>
+        <div class="menu-grid">
+            <div class="menu-item"><h3>၁။ ဂျပန်တို့ဖူးကြော်</h3><p>Deep-fried Japan-tofu</p></div>
+            <div class="menu-item"><h3>၂။ ကန်စွန်းမလိန်းကြော်</h3><p>Stir-fry Water-cress</p></div>
+            <div class="menu-item"><h3>၃။ ကြက်ဥမွှေကြော်</h3><p>Egg Omelette</p></div>
+            <div class="menu-item"><h3>၄။ ကြက်ဥအကောက်ကျက်ကြော်</h3><p>C-egg Half Fried</p></div>
+            <div class="menu-item"><h3>၅။ သီဟိုဠ်စေ့ကြော်</h3><p>Deep-fry Cashew-nuts</p></div>
+            <div class="menu-item"><h3>၆။ ငါးမုန့်ကြော်</h3><p>Fish Cricker</p></div>
+            <div class="menu-item"><h3>၇။ သီးစုံတန်ပူရာကြော်</h3><p>Mix Vegetable Tempura</p></div>
+            <div class="menu-item"><h3>၈။ အာလူးချောင်းကြော်</h3><p>French-fry Potato</p></div>
+            <div class="menu-item"><h3>၉။ အာလူးပြားကြော်</h3><p>Deep-fry Crispy Potato Chips</p></div>
+            <div class="menu-item"><h3>၁၀။ ကြက်အူချောင်းကြော်</h3><p>Deep-fry Chicken Sausage</p></div>
+            <div class="menu-item"><h3>၁၁။ ဝက်အူချောင်းကြော်</h3><p>Deep-fry Pork Sausage</p></div>
+            <div class="menu-item"><h3>၁၂။ ကြက်ကြွပ်ကြော်</h3><p>Deep-fry Chicken</p></div>
+            <div class="menu-item"><h3>၁၃။ ပြည်ကြီးငါးကြော်</h3><p>Deep-fry Cuttlefish</p></div>
+            <div class="menu-item"><h3>၁၄။ နံရိုးနီကြော်</h3><p>Ribs Fried</p></div>
+            <div class="menu-item"><h3>၁၅။ အစိမ်းကြော်</h3><p>Green Fried</p></div>
+            <div class="menu-item"><h3>၁၆။ ကုန်းဘောင်ကြီးကြော်</h3><p>Mainland Fried</p></div>
+            <div class="menu-item"><h3>၁၇။ ဘဲပေါင်းကြွပ်ကြော်</h3><p>Deep-fry Steamed Duck Crispy</p></div>
+            <div class="menu-item"><h3>၁၈။ ပုစွန်တန်ပူရာ</h3><p>Deep-fry Prawn Tempura</p></div>
+            <div class="menu-item"><h3>၁၉။ ကြက်သားလုံးကြော် (ကြက်/ဝက်)</h3><p>Deep-fry Chicken or Pork Crispy Ball</p></div>
+            <div class="menu-item"><h3>၂၀။ ကြက်မြောက်စပ် (ကြက်/ဝက်)</h3><p>Deep-fry Spicy Chicken or Pork</p></div>
+            <div class="menu-item"><h3>၂၁။ ကိုက်လန်ခရုဆီချက်</h3><p>Boiling Kale Oyster Sauce</p></div>
+            <div class="menu-item"><h3>၂၂။ ထိုင်ဝမ်မုန်ညှင်းခရုဆီ</h3><p>Boiling Bokchoy Oyster Sauce</p></div>
+            <div class="menu-item"><h3>၂၃။ လေးမျိုးခရုဆီ</h3><p>4 Kind Vegetable with Oyster Sauce</p></div>
+        </div>
+
+        <!-- Chinese Main Course -->
+        <div class="category-title">တရုတ်ဟင်းလျာများ (Chinese Main Course)</div>
+        <div class="menu-grid">
+            <div class="menu-item"><h3>၁။ စီချွမ်းပြည်ကြီးငါးချက်</h3><p>Chinese "Zichon" Style Cuttlefish Curry</p></div>
+            <div class="menu-item"><h3>၂။ ပြည်ကြီးငါးအစပ်ချက်</h3><p>Cuttlefish with Spicy Curry</p></div>
+            <div class="menu-item"><h3>၃။ ပြည်ကြီးငါးယမကာချက်</h3><p>Cuttlefish with Yamaka Sauce</p></div>
+            <div class="menu-item"><h3>၄။ ပြည်ကြီးငါးမဆလာချက်</h3><p>Cuttlefish with Masala Paste Curry</p></div>
+            <div class="menu-item"><h3>၅။ ပြည်ကြီးငါးခရုဆီချက်</h3><p>Boiling Cuttlefish with Oyster Sauce</p></div>
+            <div class="menu-item"><h3>၆။ ပုစွန်ရှန်ဟိုင်းချက်</h3><p>Chinese Shanghai Style Prawn Curry</p></div>
+            <div class="menu-item"><h3>၇။ ပြည်လုံးချမ်းသာ</h3><p>Assorted-meat Chinese Special Dishes</p></div>
+            <div class="menu-item"><h3>၈။ ပုစွန်ဟော့ပလိတ် (ပုစွန်သံပူပြားဟောင်းလျာ)</h3><p>Iron Hot Plate Spicy Prawn Curry</p></div>
+            <div class="menu-item"><h3>၉။ ကြက်တုံယမကာချက်</h3><p>Deep-fry Crispy Chicken with Yamakar Sauce</p></div>
+            <div class="menu-item"><h3>၁၀။ ကြက်ပဲငါးပိ</h3><p>Chinese Style Chicken Soyabean Paste Curry</p></div>
+            <div class="menu-item"><h3>၁၁။ ကြက်ချိုချဉ်</h3><p>Chicken Sweet & Sour</p></div>
+            <div class="menu-item"><h3>၁၂။ ကြက်ချဉ်စပ်</h3><p>Chicken Hot & Sour</p></div>
+            <div class="menu-item"><h3>၁၃။ ကြက်တုံးချဉ်စပ်ကြော်</h3><p>Deep-fry Crispy Chicken Cube with Special Spicy Sauce</p></div>
+            <div class="menu-item"><h3>၁၄။ ကြက်ကချင်ချက်</h3><p>Myanmar Traditional Kachin Style Chicken Curry</p></div>
+            <div class="menu-item"><h3>၁၅။ ကြက် (ဘရူနိုင်းချက်)</h3><p>Brunei-style Chicken Curry</p></div>
+            <div class="menu-item"><h3>၁၆။ ကြက်သားခရုဆီချက်</h3><p>Chicken with Oyster-sauce</p></div>
+            <div class="menu-item"><h3>၁၇။ ကြက်သီးစုံမြေတော</h3><p>Chicken with Water Chestnuts</p></div>
+            <div class="menu-item"><h3>၁၈။ ကြက်တုံးမြေအိုးအိုးချက်</h3><p>Chicken B-dice Clay-pot Curry</p></div>
+            <div class="menu-item"><h3>၁၉။ ဂဏန်းမဆလာချက်</h3><p>Crab-masala Curry (Chinese Style)</p></div>
+            <div class="menu-item"><h3>၂၀။ ဂဏန်းချဉ်စပ်</h3><p>Crab Hot & Sour Dishes</p></div>
+            <div class="menu-item"><h3>၂၁။ ဂဏန်းအစပ်ချက်</h3><p>Crab Spicy Curry</p></div>
+            <div class="menu-item"><h3>၂၂။ ဂဏန်းနို့စိမ့်မဆလာချက်</h3><p>Crab-masala Paste Special Curry</p></div>
+            <div class="menu-item"><h3>၂၃။ ဂဏန်းပေါင်းဟင်းလျာ</h3><p>Steamed Crab Curry (Sweet)</p></div>
+            <div class="menu-item"><h3>၂၄။ ဂဏန်းယမကာချက်</h3><p>Crab Yamaka Sauce</p></div>
+            <div class="menu-item"><h3>၂၅။ ငါးရှဉ့်ခြောက်စပ်</h3><p>Eel Dry Crispy Spicy Dishes</p></div>
+            <div class="menu-item"><h3>၂၆။ ငါးရှဉ့်ကြွပ်ကြော်</h3><p>Deep-fry Eel Crispy</p></div>
+            <div class="menu-item"><h3>၂၇။ ငါးရှဉ့်တောချက်</h3><p>Forest Style Eel Curry</p></div>
+            <div class="menu-item"><h3>၂၈။ ငါးရှဉ့်ချဉ်စပ်ဟင်းလျာ</h3><p>Eel Hot & Sour Dishes</p></div>
+            <div class="menu-item"><h3>၂၉။ ငါးရှဉ့်မြေအိုး</h3><p>Eel Clay-Pot Curry</p></div>
+            <div class="menu-item"><h3>၃၀။ ငါးကြွပ်ပင်စိမ်းဟင်းလျာ</h3><p>Deep-fry Crispy Hot Basil Dishes</p></div>
+            <div class="menu-item"><h3>၃၁။ ရှန်ဟိုင်းငါးကုန်းဘောင်ကြီးကြော်</h3><p>Chinese Shang-hai Fish Kauag"Po"</p></div>
+            <div class="menu-item"><h3>၃၂။ ငါးရိုးလွတ်ပဲငါးပိ</h3><p>Special Boneless Fish Soya-bean Paste Curry</p></div>
+            <div class="menu-item"><h3>၃၃။ ငါးတောဟင်းလျာ</h3><p>Stewing Whole Fish Chinese Style</p></div>
+            <div class="menu-item"><h3>၃၄။ ငါးဆားငံစေ့ပေါင်းဟင်းလျာ</h3><p>Chinese Salted Plum with Whole Fish Soup</p></div>
+            <div class="menu-item"><h3>၃၅။ ငါးကြွပ်ချဉ်စပ်ဟင်းလျာ</h3><p>Deep-fry Whole Fish with Hot & Sour Sauce</p></div>
+            <div class="menu-item"><h3>၃၆။ ငါးကြွပ်ချိုချဉ်</h3><p>Deep-fry Whole Fish Crispy with Sweet & Sour Sauce</p></div>
+            <div class="menu-item"><h3>၃၇။ ငါးကြွပ်မုန်ညှင်းခြောက်စပ်</h3><p>Deep-fry Whole Fish Crispy with Pickled-mustard Sauce</p></div>
+            <div class="menu-item"><h3>၃၈။ စပါယ်ရှယ်ငါးကြွပ်နှပ်</h3><p>Special Crispy Whole Fish with Braising Methods</p></div>
+            <div class="menu-item"><h3>၃၉။ ငါးဖေကပ်ကင်</h3><p>Grill Fish in Aluminium Grill</p></div>
+            <div class="menu-item"><h3>၄၀။ ငါးသောက်ဆမ်း</h3><p>Myanmar Traditional Fish Hot & Sour Special Soup</p></div>
+        </div>
+
+        <!-- Thai Main Course & Salads -->
+        <div class="category-title">ထိုင်းစတိုင် ဟင်းလျာ နှင့် အသုပ်များ (Thai Style)</div>
+        <div class="menu-grid">
+            <div class="menu-item"><h3>၁။ ပုစွန်နို့စိမ့်မဆလာချက်</h3><p>Prawn-masala Paste Curry</p></div>
+            <div class="menu-item"><h3>၂။ ကြက်ပင်စိမ်းဟောင်းလျာ</h3><p>Chicken Basil Curry</p></div>
+            <div class="menu-item"><h3>၃။ ကြက်ယိုဒယားချက်</h3><p>Thai Style Chicken Curry</p></div>
+            <div class="menu-item"><h3>၄။ ဣတ္ထေင်း နှစ်မျက်နှာဟင်း</h3><p>Thai Style Twoface Fish Curry</p></div>
+            <div class="menu-item"><h3>၅။ ဣတ္ထေင်း တလင်းသံပုရာပေါင်း</h3><p>Fish Spicy Thaistyle Lime Sauce</p></div>
+            <div class="menu-item"><h3>၆။ ယိုဒယားငါးပေါင်းချဉ်စပ်</h3><p>Thai Style Steamed Fish Hot & Sour</p></div>
+            <div class="menu-item"><h3>၇။ ယိုဒယားဝက်ကြွပ်ကြော်</h3><p>Thai Style Crispy Pork</p></div>
+            <div class="menu-item"><h3>၈။ ထိုင်းစတိုင် ပင်လယ်စာအစုံသုပ်</h3><p>Assorted Seafood Salad Thai Style</p></div>
+            <div class="menu-item"><h3>၉။ ပုစွန်အစိမ်းသုပ်</h3><p>Thai Style Fresh Prawn Salad</p></div>
+            <div class="menu-item"><h3>၁၀။ မာလာအစုံသုပ်</h3><p>Chinese Spicy Mala Sauce Salad</p></div>
+            <div class="menu-item"><h3>၁၁။ ကြက်ဝင်ကောင်သုပ်</h3><p>Chicken Mint-chop Spicy Salad</p></div>
+            <div class="menu-item"><h3>၁၂။ ကန်စွန်းရွက်သုပ်</h3><p>Water-cress Salad</p></div>
+            <div class="menu-item"><h3>၁၃။ သင်္ဘောသီးထောင်း</h3><p>Thai Style Papaya Salad</p></div>
+            <div class="menu-item"><h3>၁၄။ ငါးကြွပ်ထိုင်းဆော့(ဖ်)သုပ်</h3><p>Crispy Fish Salad Thai Style</p></div>
+            <div class="menu-item"><h3>၁၅။ ထိုင်းစတိုင် ကင်မွန်းသုပ်</h3><p>Thai Style Squid Salad</p></div>
+            <div class="menu-item"><h3>၁၆။ ကြက်ခြေထောက်ယိုဒယားသုပ်</h3><p>Thai Chicken Foot Salad</p></div>
+            <div class="menu-item"><h3>၁၇။ ပုစွန်ပဲကြာဆံသုပ်ထိုင်းစတိုင်</h3><p>Prawn & Glass Vermicelli Salad Thai Style</p></div>
+        </div>
+
+        <!-- Chinese Salads -->
+        <div class="category-title">တရုတ် အသုပ်များ (Chinese Food Salad)</div>
+        <div class="menu-grid">
+            <div class="menu-item"><h3>၁။ သုံးမျိုးစပ်အထူးသုပ်</h3><p>Chinese '3' Kind Special Salad (Sweet & Spicy)</p></div>
+            <div class="menu-item"><h3>၂။ ပုစွန်အကျက်သုပ်</h3><p>Boiling Prawn Salad</p></div>
+            <div class="menu-item"><h3>၃။ ကြက်ခြေထောက်သုပ်</h3><p>Boiling Chicken Feet Spicy Salad</p></div>
+            <div class="menu-item"><h3>၄။ ဆေးဥဥသုပ်</h3><p>Chinese Century-Eggs Salad</p></div>
+            <div class="menu-item"><h3>၅။ ပုစွန်ပဲကြာဆံသုပ်</h3><p>Boiling Prawn & Glass Vermicelli Salad</p></div>
+            <div class="menu-item"><h3>၆။ ဂျင်းသုပ်</h3><p>Boiling Clam Spicy Salad</p></div>
+            <div class="menu-item"><h3>၇။ ခရုသုပ်</h3><p>Boiling Myanmar Oyster Salad</p></div>
+            <div class="menu-item"><h3>၈။ ကင်းမွန်သုပ်</h3><p>Boiling Squid Spicy Salad</p></div>
+            <div class="menu-item"><h3>၉။ ငါးနီတူခြောက်သုပ်</h3><p>Myanmar Dry Fish Spicy Salad</p></div>
+            <div class="menu-item"><h3>၁၀။ ပုစွန်ကင်သုပ်</h3><p>Grill Prawn Salad</p></div>
+            <div class="menu-item"><h3>၁၁။ ဝက်အူမသုပ်</h3><p>Boiling Pork Tripe Salad</p></div>
+            <div class="menu-item"><h3>၁၂။ ကြက်သားသုပ်</h3><p>Chicken Salad</p></div>
+            <div class="menu-item"><h3>၁၃။ ဝက်သားသုပ်</h3><p>Pork Salad</p></div>
+            <div class="menu-item"><h3>၁၄။ ကျောက်ပျဉ်းပွင့်သုပ်</h3><p>Kyauk Pwint Salad</p></div>
+        </div>
+
+        <!-- Soups -->
+        <div class="category-title">ဟင်းရည်များ (Soups)</div>
+        <div class="menu-grid">
+            <div class="menu-item"><h3>၁။ အက္ကရာစုံဟင်းချို</h3><p>Assorted Seafood Special Soup</p></div>
+            <div class="menu-item"><h3>၂။ ငါးခေါင်းဟင်းချို</h3><p>Chinese Spicy Fish-head Soup</p></div>
+            <div class="menu-item"><h3>၃။ နံရိုးပေါင်းမုန်ညှင်းချဉ်ဟင်းချို</h3><p>Steamed Pork-rib with Pickled Mustard Soup</p></div>
+            <div class="menu-item"><h3>၄။ ထမင်းစုံဟင်းချို</h3><p>Chinese Assorted Vegetable Soup</p></div>
+            <div class="menu-item"><h3>၅။ ပုစွန်စီချွမ်းဟင်းချို</h3><p>Chinese Sichuan Special Prawn Soup</p></div>
+            <div class="menu-item"><h3>၆။ ငါးကောင်လုံး ချဉ်စပ်ဟင်းချို</h3><p>Sea-parch Whole Fish Hot & Sour Soup</p></div>
+            <div class="menu-item"><h3>၇။ ငါးဖုန့်လုံးချဉ်စပ်ဟင်းချို</h3><p>Fresh-fish Ball Special Soup</p></div>
+            <div class="menu-item"><h3>၈။ ကြက်တောတောက်ဟင်းချို</h3><p>Myanmar Forest Style Chicken Special Soup</p></div>
+            <div class="menu-item"><h3>၉။ ကြက်ဥ ဆာဂါဟင်းချို</h3><p>Hot & Sour Chicken-egg Soup</p></div>
+            <div class="menu-item"><h3>၁၀။ အပ်မှိုဟင်းချို</h3><p>Enoki Mushrooms Soup</p></div>
+            <div class="menu-item"><h3>၁၁။ တုံယမ်းဟင်းချို</h3><p>Tom Yum Soup</p></div>
+            <div class="menu-item"><h3>၁၂။ ပင်လယ်စာအစုံချဉ်စပ်ဟင်းချို</h3><p>Assorted Seafood Hot & Sour Soup</p></div>
+            <div class="menu-item"><h3>၁၃။ အသားလုံးနှင့် ပဲကြာဆံဟင်းချို</h3><p>Thai Style Meat-ball with Glassvermicelli Soup</p></div>
+        </div>
+
+        <!-- Fried Rice & Noodle Dishes -->
+        <div class="category-title">ထမင်းကြော်၊ ခေါက်ဆွဲ နှင့် ဆန်ကြာဇံများ (Fried Rice & Noodles)</div>
+        <div class="menu-grid">
+            <div class="menu-item"><h3>၁။ ကြက်ခေါက်ဆွဲကြော် (ကြက်/ဝက်/ပုစွန်/ပင်လယ်စာ)</h3><p>Chicken Fry Noodle</p></div>
+            <div class="menu-item"><h3>၂။ ကြာဇံကြော်</h3><p>Stir-fry Chicken-vermicelli</p></div>
+            <div class="menu-item"><h3>၃။ မလေးရှားခေါက်ဆွဲကြော်</h3><p>Malay Style Stir-fry Rice-noodle Spicy</p></div>
+            <div class="menu-item"><h3>၄။ ယိုဒယားခေါက်ဆွဲကြော်</h3><p>Thai Style Spicy Stir-fry Noodle</p></div>
+            <div class="menu-item"><h3>၅။ ခေါက်ဆွဲပြုတ်</h3><p>Chinese Special Noodle Soup</p></div>
+            <div class="menu-item"><h3>၆။ ကြာဇံပြုတ်</h3><p>Chinese Special Vermicelli Soup</p></div>
+            <div class="menu-item"><h3>၇။ ကော်ရည်ခေါက်ဆွဲ (ကြက်/ဝက်)</h3><p>Glue with Noodle</p></div>
+            <div class="menu-item"><h3>၈။ ခေါက်ဆွဲပေါင်း</h3><p>Assorted Vegetable with Noodle</p></div>
+            <div class="menu-item"><h3>၉။ ဖူကျန့်ခေါက်ဆွဲကြော်</h3><p>Chinese Special Fujian Fry Noodle</p></div>
+            <div class="menu-item"><h3>၁၀။ မြို့ကတ်ကျေးကိုက်</h3><p>Myanmar Traditional Rice Noodle or Bean</p></div>
+            <div class="menu-item"><h3>၁၁။ ကြက်ကြှပ်မှိုထမင်းကြော်</h3><p>Chicken & Fungal with Fried Rice</p></div>
+            <div class="menu-item"><h3>၁၂။ အမေရိကန် ထမင်းကြော်</h3><p>U.S.A Style Fried Rice</p></div>
+            <div class="menu-item"><h3>၁၃။ ပိဿာထမင်းကြော်</h3><p>Spicy Fry-rice Chicken</p></div>
+            <div class="menu-item"><h3>၁၄။ ယူနန်ထမင်းကြော်</h3><p>Chinese Spicy Chicken Fry Rice</p></div>
+            <div class="menu-item"><h3>၁၅။ တရုတ်ထမင်းကြော်</h3><p>Chinese Traditional Fry-rice</p></div>
+            <div class="menu-item"><h3>၁၆။ ယိုဒယားထမင်းကြော်</h3><p>Thai Style Spicy Fry-rice</p></div>
+            <div class="menu-item"><h3>၁၇။ ယိုဒယားငါးပိထမင်းကြော်</h3><p>Thai Traditional Fish-paste Fry-rice</p></div>
+            <div class="menu-item"><h3>၁၈။ ယိုဒယားတုံယမ်းထမင်းကြော်</h3><p>Thai Style Tomyam Fried Rice</p></div>
+            <div class="menu-item"><h3>၁၉။ ငါးပုဒ်ခြောက်ထမင်းကြော်</h3><p>Dry Fish with Stir-fry Rice</p></div>
+            <div class="menu-item"><h3>၂၀။ အထူးအသားစုံမြေအိုးထမင်းပေါင်း</h3><p>Special Assorted Meat Rice with Clay Pot</p></div>
+            <div class="menu-item"><h3>၂၁။ ဝက်လက်ထမင်းပေါင်း</h3><p>Steamed Pork Leg with Rice</p></div>
+            <div class="menu-item"><h3>၂၂။ ရှံနံရိုးထမင်းပေါင်း</h3><p>Steamed Special Pork Rib with Rice</p></div>
+        </div>
+
+        <!-- Myanmar Traditional & Dessert -->
+        <div class="category-title">မြန်မာတိုင်းရင်းသား အစားအစာ နှင့် အချိုပွဲများ (Myanmar Food & Dessert)</div>
+        <div class="menu-grid">
+            <div class="menu-item"><h3>၁။ လက်ဖက်ထမင်းသုပ်</h3><p>Myanmar Style Tea-leaf and Rice Salad</p></div>
+            <div class="menu-item"><h3>၂။ ထမင်းသုပ်</h3><p>Myanmar Style Rice Salad</p></div>
+            <div class="menu-item"><h3>၃။ မြန်မာပဲပြုတ်ထမင်းကြော်</h3><p>Myanmar Style Fried Rice with Boiling Beans</p></div>
+            <div class="menu-item"><h3>၄။ လက်ဖက်သုပ်</h3><p>Myanmar Style Tea-leaf Salad</p></div>
+            <div class="menu-item"><h3>၅။ ဂျင်းသုပ်</h3><p>Myanmar Style Ginger Salad</p></div>
+            <div class="menu-item"><h3>၆။ မြင်းခွာရွက်သုပ်</h3><p>Myanmar Style Pennywort Salad</p></div>
+            <div class="menu-item"><h3>၇။ ခရမ်းချဉ်သီးသုပ်</h3><p>Myanmar Style Tomato Salad</p></div>
+            <div class="menu-item"><h3>၈။ ရာသီပေါ်သီးနှံများ (Dessert)</h3><p>Seasonal Fruit</p></div>
+        </div>
+
+        <!-- Ad Banner Placement (Optional) -->
+        <div class="ad-banner">
+            <p><strong>[ တိုက်ရိုက်ကြော်ငြာ သို့မဟုတ် Google AdSense ထည့်ရန်နေရာ ]</strong></p>
+        </div>
+
+    </div>
+
+    <!-- Call to Order Button -->
+    <div class="call-btn-container">
+        <a href="tel:09772517045" class="call-btn">📞 အော်ဒါချက်ချင်းမှာယူရန် (09772517045)</a>
+    </div>
+
+</body>
+</html>
